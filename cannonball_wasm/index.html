@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cannonball</title>
+    <style>
+      body {
+        font-family: verdana;
+        font-size: 15px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Cannonball</h1>
+    <button id="buttonRun">Run</button>
+    <button id="buttonRestart">Restart</button>
+    <br /><br />
+    <div id="container"></div>
+    <canvas id="myCanvas" style="border: 2px solid"></canvas>
+
+    <script type="module">
+      import {run, restart} from "./simulate.js"
+      document.getElementById("buttonRun").onclick = run
+      document.getElementById("buttonRestart").onclick = restart
+    </script>
+  </body>
+</html>
